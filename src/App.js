@@ -97,7 +97,7 @@ function App() {
 
     const apptDate = `${dd}-${mm}-${yyyy}`
 
-    console.log(`District Id: ${districtName} for Date: ${apptDate} `)
+    //console.log(`District Id: ${districtName} for Date: ${apptDate} `)
     getSlotsByDistrict(districtName, apptDate)
   }
 
