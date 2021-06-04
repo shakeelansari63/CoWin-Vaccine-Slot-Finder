@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CoWin-Vaccine-Slot-Finder/static/css/main.052177fb.chunk.css",
-    "main.js": "/CoWin-Vaccine-Slot-Finder/static/js/main.ef0afaf9.chunk.js",
-    "main.js.map": "/CoWin-Vaccine-Slot-Finder/static/js/main.ef0afaf9.chunk.js.map",
+    "main.js": "/CoWin-Vaccine-Slot-Finder/static/js/main.19f8f681.chunk.js",
+    "main.js.map": "/CoWin-Vaccine-Slot-Finder/static/js/main.19f8f681.chunk.js.map",
     "runtime-main.js": "/CoWin-Vaccine-Slot-Finder/static/js/runtime-main.346b58e4.js",
     "runtime-main.js.map": "/CoWin-Vaccine-Slot-Finder/static/js/runtime-main.346b58e4.js.map",
     "static/css/2.d41d6dcb.chunk.css": "/CoWin-Vaccine-Slot-Finder/static/css/2.d41d6dcb.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.d41d6dcb.chunk.css",
     "static/js/2.5dc542ae.chunk.js",
     "static/css/main.052177fb.chunk.css",
-    "static/js/main.ef0afaf9.chunk.js"
+    "static/js/main.19f8f681.chunk.js"
   ]
 }
