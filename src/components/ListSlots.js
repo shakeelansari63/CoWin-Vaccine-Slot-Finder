@@ -1,3 +1,6 @@
+// Icon
+import { FaSync } from 'react-icons/fa'
+
 const ListSlots = ({ slotList, ageFilter, changeAgeFilter, vaccineFilter, changeVaccineFilter, resetAllFilters }) => {
     return (
         <div className='container'>
@@ -29,7 +32,7 @@ const ListSlots = ({ slotList, ageFilter, changeAgeFilter, vaccineFilter, change
                         onChange={changeVaccineFilter} autoComplete="off"/>
                     <label className='filter-btn btn btn-outline-success' 
                         htmlFor='vac-filter-sputnik'>Sputnik</label>
-                    <button className='btn btn-danger' onClick={resetAllFilters}>Clear</button>
+                    <FaSync className='filter-btn' style={{color: 'red', cursor: 'pointer'}} onClick={resetAllFilters} />
                 </div>
             </div>
             {

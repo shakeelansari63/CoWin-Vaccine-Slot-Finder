@@ -106,6 +106,9 @@ function App() {
 
     setAgeFilter(0)
     setVaccineFilter('')
+
+    // Refresh Slots
+    findSlots(evnt)
   }
 
   // Find all Slots
