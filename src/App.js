@@ -16,6 +16,8 @@ function App() {
   const [districtList, setDistrictList] = useState([])
   const [appointmentDate, setAppointmentDate] = useState(new Date())
   const [appointmentSlotList, setAppointmentSlotList] = useState([])
+  const [ageFilter, setAgeFilter] = useState(0)
+  const [vaccineFilter, setVaccineFilter] = useState('')
 
   //Get List of all States on Startup
   useEffect(() => {
@@ -87,6 +89,25 @@ function App() {
     setAppointmentDate(dt)
   }
 
+  const changeAgeFilter = (evnt) => {
+    const ageFl = parseInt(evnt.target.value)
+
+    // Set Age Filter
+    setAgeFilter(ageFl)
+  }
+
+  const changeVaccineFilter = (evnt) => {
+    setVaccineFilter(evnt.target.value)
+  }
+
+  const resetAllFilters = (evnt) => {
+    // reset Default submit behavious
+    evnt.preventDefault()
+
+    setAgeFilter(0)
+    setVaccineFilter('')
+  }
+
   // Find all Slots
   const findSlots = (evnt) => {
     evnt.preventDefault()
@@ -114,7 +135,13 @@ function App() {
         changeDistrict={changeDistrict}
         appointmentDate={appointmentDate}
         changeDate={changeDate} />
-      <ListSlots slotList={appointmentSlotList} />
+      <ListSlots 
+        slotList={appointmentSlotList} 
+        ageFilter={ageFilter} 
+        changeAgeFilter={changeAgeFilter}
+        vaccineFilter={vaccineFilter}
+        changeVaccineFilter={changeVaccineFilter}
+        resetAllFilters={resetAllFilters}/>
     </div>
   );
 }

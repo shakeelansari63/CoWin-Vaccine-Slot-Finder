@@ -3,7 +3,7 @@
     border-radius: 5px;
     margin: 30px auto;
     padding: 30px;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 .form-filed {
@@ -33,8 +33,13 @@
 .vacfee {
     color: #6f00a6
 }
+
 .rowdisplay {
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.filter-btn {
+    margin: 5px;
 }
