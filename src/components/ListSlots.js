@@ -5,7 +5,6 @@ const ListSlots = ({ slotList, ageFilter, changeAgeFilter, vaccineFilter, change
     return (
         <div className='container'>
             <div className='rowdisplay'>
-                <div>
                     <input type='radio' className='btn-check' name='age-filter' checked={ageFilter === 18}
                         id='age-filter-18' value='18' onChange={changeAgeFilter} autoComplete="off"/>
                     <label className='filter-btn btn btn-outline-success' htmlFor='age-filter-18'>18+</label>
@@ -33,7 +32,6 @@ const ListSlots = ({ slotList, ageFilter, changeAgeFilter, vaccineFilter, change
                     <label className='filter-btn btn btn-outline-success' 
                         htmlFor='vac-filter-sputnik'>Sputnik</label>
                     <FaSync className='filter-btn' style={{color: 'red', cursor: 'pointer'}} onClick={resetAllFilters} />
-                </div>
             </div>
             {
                 slotList.length > 0 ? slotList
