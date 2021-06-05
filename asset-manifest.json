@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CoWin-Vaccine-Slot-Finder/static/css/main.6a9d486b.chunk.css",
+    "main.css": "/CoWin-Vaccine-Slot-Finder/static/css/main.96c90706.chunk.css",
     "main.js": "/CoWin-Vaccine-Slot-Finder/static/js/main.111e6e7b.chunk.js",
     "main.js.map": "/CoWin-Vaccine-Slot-Finder/static/js/main.111e6e7b.chunk.js.map",
     "runtime-main.js": "/CoWin-Vaccine-Slot-Finder/static/js/runtime-main.346b58e4.js",
@@ -12,14 +12,14 @@
     "static/js/3.bf492816.chunk.js.map": "/CoWin-Vaccine-Slot-Finder/static/js/3.bf492816.chunk.js.map",
     "index.html": "/CoWin-Vaccine-Slot-Finder/index.html",
     "static/css/2.d41d6dcb.chunk.css.map": "/CoWin-Vaccine-Slot-Finder/static/css/2.d41d6dcb.chunk.css.map",
-    "static/css/main.6a9d486b.chunk.css.map": "/CoWin-Vaccine-Slot-Finder/static/css/main.6a9d486b.chunk.css.map",
+    "static/css/main.96c90706.chunk.css.map": "/CoWin-Vaccine-Slot-Finder/static/css/main.96c90706.chunk.css.map",
     "static/js/2.5dc542ae.chunk.js.LICENSE.txt": "/CoWin-Vaccine-Slot-Finder/static/js/2.5dc542ae.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.346b58e4.js",
     "static/css/2.d41d6dcb.chunk.css",
     "static/js/2.5dc542ae.chunk.js",
-    "static/css/main.6a9d486b.chunk.css",
+    "static/css/main.96c90706.chunk.css",
     "static/js/main.111e6e7b.chunk.js"
   ]
 }
