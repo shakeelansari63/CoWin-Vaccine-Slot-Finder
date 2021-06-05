@@ -7,6 +7,7 @@ import './App.css'
 import Header from './components/Header'
 import SearchSlot from './components/SearchSlot'
 import ListSlots from './components/ListSlots'
+import Footer from './components/Footer'
 
 function App() {
   // Controls for Form Items
@@ -134,26 +135,33 @@ function App() {
   }
 
   return (
-    <div className='container-fluid container-box'>
-      <Header />
-      <SearchSlot
-        stateName={stateName}
-        statesList={statesList}
-        districtName={districtName}
-        districtList={districtList}
-        findSlots={findSlots}
-        changeState={changeState}
-        changeDistrict={changeDistrict}
-        appointmentDate={appointmentDate}
-        changeDate={changeDate} />
-      <ListSlots
-        slotList={appointmentSlotList}
-        ageFilter={ageFilter}
-        changeAgeFilter={changeAgeFilter}
-        vaccineFilter={vaccineFilter}
-        changeVaccineFilter={changeVaccineFilter}
-        resetAllFilters={resetAllFilters} />
-    </div>
+    <>
+      <div className='container-fluid container-box' style={{ color: 'white', backgroundColor: '#32a0a8' }}>
+        <Header />
+      </div>
+      <div className='container-fluid container-box'>
+        <SearchSlot
+          stateName={stateName}
+          statesList={statesList}
+          districtName={districtName}
+          districtList={districtList}
+          findSlots={findSlots}
+          changeState={changeState}
+          changeDistrict={changeDistrict}
+          appointmentDate={appointmentDate}
+          changeDate={changeDate} />
+        <ListSlots
+          slotList={appointmentSlotList}
+          ageFilter={ageFilter}
+          changeAgeFilter={changeAgeFilter}
+          vaccineFilter={vaccineFilter}
+          changeVaccineFilter={changeVaccineFilter}
+          resetAllFilters={resetAllFilters} />
+      </div>
+      <div className='container-fluid container-box'>
+        <Footer />
+      </div>
+    </>
   );
 }
 
