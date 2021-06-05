@@ -89,15 +89,23 @@ function App() {
     setAppointmentDate(dt)
   }
 
-  const changeAgeFilter = (evnt) => {
-    const ageFl = parseInt(evnt.target.value)
+  const changeAgeFilter = (age) => {
+    const ageFl = parseInt(age)
 
     // Set Age Filter
-    setAgeFilter(ageFl)
+    if (ageFilter === ageFl) {
+      setAgeFilter(0)
+    } else {
+      setAgeFilter(ageFl)
+    }
   }
 
-  const changeVaccineFilter = (evnt) => {
-    setVaccineFilter(evnt.target.value)
+  const changeVaccineFilter = (vaccine) => {
+    if (vaccineFilter === vaccine) {
+      setVaccineFilter('')
+    } else {
+      setVaccineFilter(vaccine)
+    }
   }
 
   const resetAllFilters = (evnt) => {
@@ -138,13 +146,13 @@ function App() {
         changeDistrict={changeDistrict}
         appointmentDate={appointmentDate}
         changeDate={changeDate} />
-      <ListSlots 
-        slotList={appointmentSlotList} 
-        ageFilter={ageFilter} 
+      <ListSlots
+        slotList={appointmentSlotList}
+        ageFilter={ageFilter}
         changeAgeFilter={changeAgeFilter}
         vaccineFilter={vaccineFilter}
         changeVaccineFilter={changeVaccineFilter}
-        resetAllFilters={resetAllFilters}/>
+        resetAllFilters={resetAllFilters} />
     </div>
   );
 }

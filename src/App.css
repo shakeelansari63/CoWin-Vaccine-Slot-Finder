@@ -1,9 +1,9 @@
 .container-box {
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 30px auto;
     padding: 30px;
-    max-width: 650px;
+    min-width: 500px;
 }
 
 .form-filed {
