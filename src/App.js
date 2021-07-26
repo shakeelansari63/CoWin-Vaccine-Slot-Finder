@@ -8,6 +8,7 @@ import Header from './components/Header'
 import SearchSlot from './components/SearchSlot'
 import ListSlots from './components/ListSlots'
 import Footer from './components/Footer'
+import Banner from './components/Banner'
 
 function App() {
   // Controls for Form Items
@@ -136,6 +137,7 @@ function App() {
 
   return (
     <>
+      <Banner />
       <div className='container-fluid container-box' style={{ color: 'white', backgroundColor: '#32a0a8' }}>
         <Header />
       </div>
